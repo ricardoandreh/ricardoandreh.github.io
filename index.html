@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
     <head>
-        <title>meu site</title>
+        <title>website wip</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
@@ -10,6 +10,10 @@
             href="https://img.icons8.com/stamp/32/small-robot.png"
         />
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             body {
                 background-color: #e4d57f;
                 margin: 0;
@@ -18,24 +22,30 @@
                 justify-content: center;
                 align-items: center;
                 min-height: 100vh;
-                font-family: "Comic Sans MS", cursive, sans-serif;
+                font-family:
+                    Comic Sans MS,
+                    Comic Sans,
+                    sans-serif;
             }
 
             section {
                 text-align: center;
+                padding: 20px;
+                width: 100%;
+                max-width: 500px;
             }
 
             .gif-container img {
-                max-width: 400px;
-                width: 90%;
+                max-width: 100%;
+                width: 400px;
                 height: auto;
                 display: block;
-                margin: 0 auto;
+                margin: 0 auto 20px auto;
             }
 
-            .btn-blog {
+            .btn {
                 display: inline-block;
-                margin-top: 20px;
+                margin: 10px auto;
                 padding: 10px 30px;
                 background-color: #e1ce6e;
                 color: #333;
@@ -46,16 +56,25 @@
                 border-radius: 50px;
                 box-shadow: 0 4px 0 #333;
                 transition: all 0.2s;
+                min-width: 160px;
+                max-width: 100%;
             }
 
-            .btn-blog:hover {
+            .btn:hover {
                 transform: translateY(-2px);
                 box-shadow: 0 6px 0 #333;
             }
 
-            .btn-blog:active {
+            .btn:active {
                 transform: translateY(2px);
                 box-shadow: 0 0px 0 #333;
+            }
+
+            @media (max-width: 400px) {
+                .btn {
+                    display: block;
+                    width: 90%;
+                }
             }
         </style>
     </head>
@@ -68,7 +87,8 @@
                 />
             </div>
 
-            <a href="https://blog.randre.me" class="btn-blog">blog</a>
+            <a href="https://blog.randre.me" class="btn">blog</a>
+            <a href="https://notes.randre.me" class="btn">notes</a>
         </section>
     </body>
 </html>
