@@ -3,11 +3,20 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>site randre</title>
+        <title>randre | tecnologia e notas</title>
+
         <meta
             name="description"
             content="Site pessoal do randre. Blog e notas sobre tecnologia em desenvolvimento."
         />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="randre.me" />
+        <meta
+            property="og:description"
+            content="Blog e notas sobre tecnologia."
+        />
+        <meta property="og:url" content="https://randre.me/" />
 
         <link
             rel="icon"
@@ -52,48 +61,62 @@
 
             .img-container img {
                 max-width: 100%;
-                width: 400px;
                 height: auto;
                 display: block;
-                margin: 0 auto 20px auto;
+                margin: 0 auto 30px auto;
+                content-visibility: auto;
+                animation: float 3s ease-in-out infinite;
             }
 
             nav {
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                gap: 15px;
                 align-items: center;
             }
 
             .btn {
                 display: inline-block;
-                padding: 10px 30px;
+                padding: 12px 35px;
                 background-color: #e1ce6e;
                 color: #333;
                 text-decoration: none;
                 font-weight: bold;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
                 border: 3px solid #333;
                 border-radius: 50px;
-                box-shadow: 0 4px 0 #333;
-                transition: all 0.2s;
-                min-width: 160px;
-                max-width: 100%;
+                box-shadow: 0 5px 0 #333;
+                transition: all 0.1s;
+                min-width: 180px;
             }
 
             .btn:hover {
                 transform: translateY(-2px);
-                box-shadow: 0 6px 0 #333;
+                box-shadow: 0 7px 0 #333;
+                background-color: #ebda86;
             }
 
             .btn:active {
-                transform: translateY(2px);
-                box-shadow: 0 0px 0 #333;
+                transform: translateY(3px);
+                box-shadow: 0 2px 0 #333;
             }
 
             @media (max-width: 400px) {
                 .btn {
-                    width: 90%;
+                    width: 85%;
+                    min-width: unset;
+                }
+            }
+
+            @keyframes float {
+                0% {
+                    transform: translateY(0px);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+                100% {
+                    transform: translateY(0px);
                 }
             }
         </style>
