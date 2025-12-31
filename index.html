@@ -1,28 +1,22 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en-US">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>randre | tecnologia e notas</title>
+        <title>randre | tech & notes</title>
 
-        <meta
-            name="description"
-            content="Site pessoal do randre. Blog e notas sobre tecnologia em desenvolvimento."
-        />
+        <meta name="description" content="site randre." />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="randre.me" />
         <meta
             property="og:description"
-            content="Blog e notas sobre tecnologia."
+            content="randre blog & notes about tech."
         />
         <meta property="og:url" content="https://randre.me/" />
 
-        <link
-            rel="icon"
-            type="image/png"
-            href="https://img.icons8.com/stamp/32/small-robot.png"
-        />
+        <link rel="icon" type="image/ico" href="favicon.ico" />
+        <link rel="preload" as="image" href="wip.webp" fetchpriority="high" />
 
         <style>
             * {
@@ -62,9 +56,9 @@
             .img-container img {
                 max-width: 100%;
                 height: auto;
+                aspect-ratio: 400 / 400;
                 display: block;
                 margin: 0 auto 30px auto;
-                content-visibility: auto;
                 animation: float 3s ease-in-out infinite;
             }
 
@@ -128,13 +122,14 @@
             <div class="img-container">
                 <img
                     src="wip.webp"
-                    alt="Animação de um Goblin serrando madeira indicando trabalho em progresso"
+                    alt="Animation of a Goblin sawing wood, indicating work in progress."
                     width="400"
-                    height="300"
+                    height="400"
+                    fetchpriority="high"
                 />
             </div>
 
-            <nav aria-label="Navegação principal">
+            <nav aria-label="Main navigation">
                 <a href="https://blog.randre.me" class="btn">blog</a>
                 <a href="https://notes.randre.me" class="btn">notes</a>
             </nav>
